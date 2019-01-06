@@ -1,0 +1,23 @@
+{
+  "task": {
+    "DocClassificationTask": {
+      "data_handler": {
+        "train_path": "data.tsv",
+        "eval_path": "eval.tsv",
+        "test_path": "test.tsv"
+
+      },
+      "trainer": {
+        "epochs": 15
+      },
+      "optimizer":{
+        "lr": 0.001,
+        "type": "adam",
+        "weight_decay": 0.000004
+      }
+    },
+    "use_tensorboard": true
+  }
+}
+
+  
