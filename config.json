@@ -2,9 +2,12 @@
   "task": {
     "DocClassificationTask": {
       "data_handler": {
-        "train_path": "data.tsv",
-        "eval_path": "eval.tsv",
-        "test_path": "test.tsv"
+        "train_path": "data/train.tsv",
+        "eval_path": "data/eval.tsv",
+        "test_path": "data/test.tsv",
+        "train_batch_size": 86,
+        "eval_batch_size": 128,
+        "test_batch_size": 128
 
       },
       "trainer": {
@@ -16,7 +19,8 @@
         "weight_decay": 0.000004
       }
     },
-    "use_tensorboard": true
+    "save_snapshot_path": "./model.pt",
+    "export_caffe2_path": "./model.c2"
   }
 }
 
