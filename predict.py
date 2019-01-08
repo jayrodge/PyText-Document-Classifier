@@ -6,7 +6,8 @@ model_file = sys.argv[2]
 
 config = pytext.load_config(config_file)
 predictor = pytext.create_predictor(config, model_file)
-result = predictor({"raw_text": 'THe worst product ever'})
+text = input('\nPlease Enter the text\n')
+result = predictor({"raw_text": text})
 doc_label_scores_prefix = (
         'scores:' if any(r.startswith('scores:') for r in result)
         else 'doc_scores:'

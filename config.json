@@ -5,22 +5,20 @@
         "train_path": "data/train.tsv",
         "eval_path": "data/eval.tsv",
         "test_path": "data/test.tsv",
-        "train_batch_size": 86,
+        "train_batch_size": 128,
         "eval_batch_size": 128,
         "test_batch_size": 128
 
       },
       "trainer": {
-        "epochs": 15
+        "epochs": 20
       },
       "optimizer":{
         "lr": 0.001,
         "type": "adam",
         "weight_decay": 0.000004
       }
-    },
-    "save_snapshot_path": "./model.pt",
-    "export_caffe2_path": "./model.c2"
+    }
   }
 }
 
