@@ -1,5 +1,4 @@
 import sys
-import flask
 import pytext
 config_file = sys.argv[1]
 model_file = sys.argv[2]
