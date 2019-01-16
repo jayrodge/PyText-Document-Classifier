@@ -1,5 +1,4 @@
 import sys
-import flask
 import pytext
 config_file = sys.argv[1]
 model_file = sys.argv[2]
@@ -19,4 +18,8 @@ best_doc_label = max(
         key=lambda label: result[label][0],
     # Strip the doc label prefix here
     )[len(doc_label_scores_prefix):]
+<<<<<<< HEAD
 print("-> ",best_doc_label)
+=======
+print(best_doc_label)
+>>>>>>> ef352d25559a45f84c010790e473a30fc6ce5526
