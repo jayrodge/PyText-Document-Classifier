@@ -19,4 +19,4 @@ best_doc_label = max(
         key=lambda label: result[label][0],
     # Strip the doc label prefix here
     )[len(doc_label_scores_prefix):]
-print(best_doc_label)
+print("-> ",best_doc_label)
